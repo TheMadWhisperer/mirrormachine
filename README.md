@@ -17,9 +17,10 @@ It is **not designed for mass-market adoption** — it is a gift for those who *
 ## Basic Principles
 
 - The system derives a long entropy string via Argon2, tuned to high memory and time cost.
-- This entropy string is then used to **generate a mutation machine** — a transformation engine that shifts based on internal entropy.
-- The machine mutates the target data (plaintext or seed) in a non-linear, non-reversible manner.
+- This entropy string is then used to **dynamically generate a mutation machine** — a transformation engine that shifts based on internal entropy.
+- The machine mutates an instance specific key (naturally sourced entropy) in a non-linear, non-reversible manner.
 - Incorrect input (i.e. wrong password) yields output that looks *plausibly correct* but is *entirely false* — eliminating brute-force guidance.
+- The non-reversible result of transformation can be used as an encryption key.
 
 This is not encryption with failure detection.
 This is encryption with **false success** on every failure.
@@ -46,6 +47,14 @@ I do not claim a patent on this system, and I **explicitly prohibit** any indivi
 
 You are free to use this system. But do not **try to own it**.
 It belongs to those who understand it.
+
+## Acknowledgements
+
+I would like to very sincerely thank creators of those technologies and libraries for making experiments
+like this one possible and safe to use:
+
+- Argon2
+- Python programming language
 
 ## Philosophy
 
