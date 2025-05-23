@@ -46,6 +46,8 @@ from cryptography.hazmat.backends import default_backend
 
 """
 This is an example field of entropy. Any length can be used. Preferably 1024.
+Please keep in mind this is just a demonstration. The actual API uses naturally
+sourced entropy field of 1024 bytes.
 """
 field = list("d9226d4bd8779baa69db272f89a2e05c")
 # field   = list("                                ")
