@@ -11,14 +11,14 @@ It aims to provide:
 - No dependency on corporate, government, or cloud infrastructure
 - Resistance to future mathematical and quantum advances
 - A system that cannot be analyzed, only experienced
-- A system that persists even if attackers have everything
+- A system that persists even if attackers have everything (except the secret password)
 
 It is **not designed for mass-market adoption** — it is a gift for those who *need* it, not those who wish to market it.
 
 ## Basic Principles
 
-- The system derives a long hash via Argon2, tuned to high memory and time cost. Argon2 is not exclusive, but increases security the best at this time.
-- This hash is then used to **dynamically generate a mutation machine** — a transformation engine that shifts based on entropy in a non-predictable and irreversible manner, but with perfect determinism.
+- The system derives a long string via Argon2, tuned to high memory and time cost. Argon2 is not exclusive, but increases security the best at this time.
+- This string is then used to **dynamically generate a mutation machine** — a transformation engine that shifts based on entropy in a non-predictable and irreversible manner, but with perfect determinism.
 - The self-mutating machine mutates an instance specific key (naturally sourced entropy) in a non-linear, non-reversible manner.
 - Incorrect input (i.e. wrong password) yields output that looks *plausibly correct* but is *entirely false* — eliminating brute-force guidance.
 - The non-reversible result of transformation can be used to generate keys for encryption with ChaCha20. The Chacha20 is not exclusive, but best at this time.
