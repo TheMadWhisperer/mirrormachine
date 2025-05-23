@@ -55,6 +55,7 @@ I would like to very sincerely thank creators of those technologies and librarie
 like this one possible and safe to use:
 
 - Argon2
+- ChaCha20 by Daniel J. Bernstein
 - Python programming language
 
 ## Philosophy
